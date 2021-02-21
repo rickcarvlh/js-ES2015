@@ -63,3 +63,29 @@ const markup = `
 `;
 
 console.log(markup);
+
+console.log("#######################################");
+
+// ARROW FUNCTIONS
+
+console.log("######## Arrow functions ########");
+/**
+ * Arrow functions are a new syntax for creating functions in ES2015. This does not replace the function() {}
+ * syntax that we know and love, but we will be seeing it more and more as the go-to function syntax.
+ */
+
+// first example
+const add = (a, b) => {
+  return a + b;
+};
+
+// lack of the function keyword
+
+console.log(add(2, 3));
+
+// other ways of defining a arrow function
+// the returrn is implicit
+const add2 = (a, b) => a + b;
+console.log(add2(2, 3));
+
+
