@@ -51,13 +51,15 @@ const multil = `this is a
 console.log(multil);
 
 const person = {
-  name = 'Ryan',
-  job = 'Developer/ Instructor'
+  name: "Ryan",
+  job: "Developer/Instructor"
 };
 
 const markup = `
   <div>
     <h2>${person.name}</h2>
+    <h2>${person.job}</h2>
   </div>
 `;
 
+console.log(markup);
