@@ -88,4 +88,6 @@ console.log(add(2, 3));
 const add2 = (a, b) => a + b;
 console.log(add2(2, 3));
 
+// Arrow functions and functional programming
+console.log(" ### Arrow functions and functional programming ### ");
 
