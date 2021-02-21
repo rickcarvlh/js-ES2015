@@ -37,3 +37,27 @@ let namev2 = `Ryan`;
 let jobv2 = `Instructor`;
 let sentencev2 = `${namev2} works at HackerYou as an ${jobv2}`;
 console.log(sentencev2);
+
+// another example
+const price = 9.99;
+const shipping = 3.99;
+
+const message = `Your total with shipping will be ${price + shipping}`;
+console.log(message);
+
+// multi line strings template trings
+const multil = `this is a
+ multiline string`;
+console.log(multil);
+
+const person = {
+  name = 'Ryan',
+  job = 'Developer/ Instructor'
+};
+
+const markup = `
+  <div>
+    <h2>${person.name}</h2>
+  </div>
+`;
+
