@@ -91,3 +91,46 @@ console.log(add2(2, 3));
 // Arrow functions and functional programming
 console.log(" ### Arrow functions and functional programming ### ");
 
+// without arrow fucntions
+let numbers = [3, 4, 5, 6, 7, 8];
+const doubleNumbers = numbers.map(function(n) {
+  return n * 2;
+});
+console.log("return n * 2 using map: ", doubleNumbers);
+
+// with arrow function
+const numberArrow = [3, 4, 5, 6, 7, 8];
+const dooublenumbers = numberArrow.map(n => n * 2);
+console.log("return n * 2 with arrow function: ", dooublenumbers);
+
+// arrow function the this keyword
+// the this keyword doesn't exist outside of the block scope
+// example
+
+const personArrow = {
+  firstName: "Ryan",
+  hobbies: ["Robots", "Games", "Internet"],
+  showHobbies: function() {
+    this.hobbies.forEach(hobby => {
+      console.log(`${this.firstName} likes ${hobby}`);
+    });
+  }
+};
+personArrow.showHobbies();
+
+console.log("### Spread operators ####");
+
+// old way
+let numbersSpread = [39, 25, 90, 123];
+let max = Math.max.apply(null, numbersSpread);
+console.log("max: ", max);
+
+let numbersSpread2 = [39, 25, 90, 123];
+let max2 = Math.max(...numbersSpread2);
+console.log("spread max: ", max2);
+
+// using the spread operator
+let numbersArray1 = [3, 4, 5, 7, 8];
+let numbersArray2 = [9, 6, 10, 11];
+let concatArray = [...numbersArray1, ...numbersArray2];
+console.log(concatArray);
