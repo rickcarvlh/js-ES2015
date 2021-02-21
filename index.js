@@ -161,3 +161,11 @@ const addRest2 = function(...numbers) {
   return numbers.reduce((a, b) => a + b);
 };
 console.log(addRest2(2, 3, 4, 5, 6, 7));
+
+// another example
+console.log("Another example");
+let numbersTeste = [3];
+const multi = (multiplier, ...numbersTeste) => {
+  return numbers.map(n => n * multiplier);
+};
+console.log(multi(2));
