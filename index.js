@@ -138,6 +138,26 @@ console.log(concatArray);
 console.log("#### Rest parameters ####");
 
 /**
- * The spread operator allows us to pass an array of arguments into a function. 
+ * The spread operator allows us to pass an array of arguments into a function.
  * On the flip side of that, rest parameters allows us to gather the parameters passed to our functions! Just like the spread operator the rest parameter syntax also involves the ... at the beginning of a variable name.
  */
+
+// without rest parameters
+console.log("-- without rest parameteres --");
+const addRest = function() {
+  const numbersRest = Array.prototype.slice.call(arguments);
+  return numbersRest.reduce((a, b) => a + b);
+};
+console.log(addRest(2, 3, 4, 5, 6, 7));
+
+console.log("-- with rest parameteres --");
+
+/**
+ * Rest parameters create an actual array from the arguments passed to a function, so we can use methods like .reduce on it.
+ * This allows us the freedom to perform similar tasks much easier!
+ *
+ */
+const addRest2 = function(...numbers) {
+  return numbers.reduce((a, b) => a + b);
+};
+console.log(addRest2(2, 3, 4, 5, 6, 7));
