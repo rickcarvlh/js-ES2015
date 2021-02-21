@@ -134,3 +134,10 @@ let numbersArray1 = [3, 4, 5, 7, 8];
 let numbersArray2 = [9, 6, 10, 11];
 let concatArray = [...numbersArray1, ...numbersArray2];
 console.log(concatArray);
+
+console.log("#### Rest parameters ####");
+
+/**
+ * The spread operator allows us to pass an array of arguments into a function. 
+ * On the flip side of that, rest parameters allows us to gather the parameters passed to our functions! Just like the spread operator the rest parameter syntax also involves the ... at the beginning of a variable name.
+ */
